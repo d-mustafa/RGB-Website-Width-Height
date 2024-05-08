@@ -1,0 +1,120 @@
+/* base */
+html {
+  background: url(img/rainbowBG.jpg) no-repeat center fixed;
+  background-size: auto;
+}
+
+/* All content is contained in a div that is center-fixed-width at 500px with 75px left/right padding and background: rgba(255,255,255,0.8) */
+#content {
+  background: rgba(255, 255, 255, 0.8);
+  width: 500px;
+  margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 75px;
+}
+
+/* text */
+/* title size is 42px w/ letting spacing of 2px
+   title has font: Verdana, Geneva, Tahoma, sans-serif
+*/
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 42px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+/* rgb text is bold and has font 'Courier New', Courier, monospace */
+.rgbtext {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* inputs & labels */
+input {
+  width: 45px;
+  padding-left: 10px;
+  border-style: inset;
+  color: white;
+  font-size: 15px;
+}
+
+::placeholder {
+  color: rgb(231, 231, 231);
+}
+
+#PreWidth,
+#PreHeight {
+  background-color: grey;
+}
+
+label {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+#redinput {
+  background-color: red;
+  transition: border 2s;
+}
+
+#greeninput {
+  background-color: green;
+}
+
+#blueinput {
+  background-color: blue;
+}
+
+/* buttons */
+/* All buttons reduce opacity to 0.5 on hover */
+button:hover {
+  opacity: 0.5;
+}
+
+button {
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#blackbutton {
+  color: white;
+  background-color: black;
+  margin-right: 50px;
+}
+
+#whitebutton {
+  color: black;
+  background-color: white;
+  margin-right: 50px;
+}
+
+#previewbutton {
+  color: white;
+  background-color: gray;
+}
+
+#randombutton {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+
+/* display window */
+/* display window has background of rgb(255, 255, 0) and has dimensions 400x200. Its border is 3px solid gray. */
+#displaywindow {
+  background: rgb(255, 255, 0);
+  width: 400px;
+  height: 200px;
+  border: 3px solid gray;
+  margin: 20px auto;
+}

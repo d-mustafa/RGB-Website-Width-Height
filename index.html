@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>RGB Colors</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script defer src="main.js"></script>
+  </head>
+
+  <body>
+    <div id="content">
+      <!-- top part of the website -->
+      <h1>RGB Colors</h1>
+      <p>
+        An RGB Color is specified by:
+        <span class="rgbtext">rgb(red, green, blue)</span>
+      </p>
+      <p>
+        The parameters red, green and blue, specify the intensity of the color:
+        0
+        <i>(lowest)</i> to 255 <i>(highest)</i>
+      </p>
+      <!-- top part of the website -->
+      <hr />
+      <!-- middle part -->
+      <h2><b>Try it out for yourself...</b></h2>
+      <!-- inputs -->
+      <label for="PreWidth">Preview Width:</label>
+      <input
+        type="number"
+        id="PreWidth"
+        max="400"
+        min="50"
+        step="5"
+        placeholder="###"
+      />
+      <label for="PreHeight">Preview Height:</label>
+      <input
+        type="number"
+        id="PreHeight"
+        max="200"
+        min="50"
+        step="5"
+        placeholder="###"
+      />
+      <br />
+      <br />
+      <label for="redinput">red:</label>
+      <input
+        type="number"
+        max="255"
+        min="0"
+        step="5"
+        id="redinput"
+        placeholder="###"
+      />
+      <label for="greeninput">green:</label>
+      <input
+        type="number"
+        max="255"
+        min="0"
+        step="5"
+        id="greeninput"
+        placeholder="###"
+      />
+      <label for="blueinput">blue:</label>
+      <input
+        type="number"
+        max="255"
+        min="0"
+        step="5"
+        id="blueinput"
+        placeholder="###"
+      />
+      <br />
+      <br />
+      <!-- black, white and random button -->
+      <button id="blackbutton">Black</button>
+      <button id="whitebutton">White</button>
+      <button id="randombutton">?????</button>
+      <br /><br />
+      <!-- box -->
+      <div id="displaywindow"></div>
+      <!-- below box -->
+      <button id="previewbutton">Preview</button>
+      <p class="rgbtext" id="rgboutput"><b>rgb(255, 255, 0)</b></p>
+      <hr />
+      <!-- bottom part -->
+
+      <p>
+        <a href="https://en.wikipedia.org/wiki/RGB_color_model" target="_blank"
+          >Learn more</a
+        >
+        about RGB Color on Wikipedia.
+      </p>
+    </div>
+  </body>
+</html>
